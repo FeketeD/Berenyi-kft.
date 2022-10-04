@@ -4,6 +4,7 @@ div.cuccok{
     position: relative;
     text-align: center;
     margin: 0.5%;
+    cursor:pointer;
 }
 #kep1{
     background-image: url('https://idrinks.cdn.shoprenter.hu/custom/idrinks/catalog/view/theme/idrinks/image/advantages_premium_bg.jpg?lastmod=1651750677');
@@ -27,6 +28,7 @@ div.cuccok{
     top: 50px;
     left: -30px;
     color: white;
+    cursor: pointer;
 }
 div.szin:hover{
     background: rgba(255, 0, 0, 0.258);
