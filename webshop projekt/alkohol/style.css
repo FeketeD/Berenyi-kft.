@@ -1,0 +1,101 @@
+div.cuccok{
+    width: 350px;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    margin: 0.5%;
+}
+#kep1{
+    background-image: url('https://idrinks.cdn.shoprenter.hu/custom/idrinks/catalog/view/theme/idrinks/image/advantages_premium_bg.jpg?lastmod=1651750677');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#kep2{
+    background-image: url('https://idrinks.cdn.shoprenter.hu/custom/idrinks/catalog/view/theme/idrinks/image/advantages_summer_bg.jpg?lastmod=1651750677');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#kep3{
+    background-image: url('https://idrinks.cdn.shoprenter.hu/custom/idrinks/catalog/view/theme/idrinks/image/advantages_weekdeal_bg.jpg?lastmod=1651750677');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.szoveg{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    position: relative;
+    top: 50px;
+    left: -30px;
+    color: white;
+}
+div.szin:hover{
+    background: rgba(255, 0, 0, 0.258);
+    transition: all .5s;
+}
+.szin{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#harmas{
+    width: 1050px;
+    height: auto;
+    position: fixed;
+    top: 200px;
+    left: 200px;
+    display: flex;
+}
+#eletkor{
+    width: 100%;
+    z-index: 100;
+    height: 100%;
+    position: fixed;
+    background: black;
+    visibility: visible;
+}
+button{
+    border: 0;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px 30px;
+    color: white;
+}
+#yes{
+    background: transparent;
+    border: 2px solid green;
+}
+#no{
+    background: transparent;
+    border: 2px solid red;
+}
+#yes:hover{
+    background: linear-gradient(to left, green 5%, transparent);
+    background-size: 200%;
+    background-position: right bottom;
+    border: 0;
+    transition: all 2s ease-out;
+}
+#no:hover{
+    background: linear-gradient(to left, red 5%, transparent);
+    background-size: 200%;
+    background-position: right bottom;
+    border: 0;
+    transition: all 2s ease-out;
+}
+#eletszoveg{
+    position: relative;
+    top: 60%;
+    left: 40%;
+}
+body{
+    background: black;
+    overflow:auto;
+}
+#tizennyolc{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
