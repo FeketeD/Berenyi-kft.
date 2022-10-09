@@ -1,0 +1,68 @@
+/*FONTOS NE TÖRÖLD KI*/
+a{
+    display: none!important;
+}
+.vis{
+    display: unset!important;
+}
+
+
+body{
+    overflow-y: auto;
+}
+div.cuccok{
+    width: 350px;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    margin: 0.5%;
+    cursor:pointer;
+}
+#kep1{
+    background-image: url('https://idrinks.cdn.shoprenter.hu/custom/idrinks/catalog/view/theme/idrinks/image/advantages_premium_bg.jpg?lastmod=1651750677');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#kep2{
+    background-image: url('https://idrinks.cdn.shoprenter.hu/custom/idrinks/catalog/view/theme/idrinks/image/advantages_summer_bg.jpg?lastmod=1651750677');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#kep3{
+    background-image: url('https://idrinks.cdn.shoprenter.hu/custom/idrinks/catalog/view/theme/idrinks/image/advantages_weekdeal_bg.jpg?lastmod=1651750677');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.szoveg{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    position: relative;
+    top: 50px;
+    left: -30px;
+    color: white;
+    cursor: pointer;
+}
+div.szin:hover{
+    background: rgba(255, 0, 0, 0.258);
+    transition: all .5s;
+}
+.szin{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#harmas{
+    width: 1050px;
+    height: auto;
+    position: fixed;
+    top: 200px;
+    left: 200px;
+    display: flex;
+}
+#logo{
+    width: 15%;
+    height: auto;
+}
+.navig{
+    font-size: 1.3em;
+}
