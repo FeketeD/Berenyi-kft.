@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alkohol</title>
+    <link rel="shortcut icon" href="image/icon.ico" type="image/x-icon">
+    <!--Css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Script-->
+    <script src="js/script.js" async></script>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!--Fonts-->
+    <script src="https://kit.fontawesome.com/1ec2017ccf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--Age gate
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-4736d7fc-c3e3-4455-abb4-801d4c2906d1"></div>-->
+
+    <!--Ad-->
+    <!--<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-6e31b4a6-1a06-43a1-b561-05618b008c80"></div>-->
+
+    <!--Music-->
+    <!--<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-1835b1a7-740a-4927-951d-b7e31ec86f33"></div>-->
+
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+            <div class="container-fluid navig">
+              <span class="navbar-brand vis" onclick="myFunction()"><img src="image/icon.ico" style="margin-right: 10px" width="40" height="40">Berényi kft.</span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link vis active" href="#">Kezdőlap</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link vis" href="beer.php">Sör, Cider</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link vis" href="whisky.php">Whisky</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle vis" role="button" data-bs-toggle="dropdown">Alkoholos italok</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item vis" href="vodka.php">Vodka</a></li>
+                      <li><a class="dropdown-item vis" href="wine.php">Bor, Pezsgő</a></li>
+                      <li><a class="dropdown-item vis" href="rum.php">Rum</a></li>
+                      <li><a class="dropdown-item vis" href="liquor.php">Likőr, Krémlikőr</a></li>
+                      <li><a class="dropdown-item vis" href="palinka.php">Pálinka</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link vis" href="#">Alkoholmentes italok</a>
+                  </li>
+                </ul>
+              </div>
+                <a class="navbar-cart vis" href="cart.php">Kosár</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid cont1-bg mt-5">
+        <div class="racsok">
+            <div class="d-flex justify-content-center">
+                <div class="foracs" id="fokep"></div>
+                <div class="mellekracs" id="mellekkep"></div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="kisracs" id="fokep">
+                    <div class="kisr-hover"></div>
+                </div>
+                <div class="kisracs" id="fokep">
+                    <div class="kisr-hover"></div>
+                </div>
+                <div class="kisracs" id="fokep">
+                    <div class="kisr-hover"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid cont2-bg">
+        <div class="popprod-bg row row-cols-2">
+            <span class="noneSelect">&nbsp;</span>
+            <div class="d-flex col-12 text-center mx-2">
+                <div class="col-md-2 col-sm-3 px-1 my-md-0">
+                    <div class="card shadow card-bg">
+                        <div>
+                            <img src="image/beer/szentFekete.png" class="img-fluid card-img-top imgs">
+                        </div>
+                        <div class="card-body\">
+                            <h5 class="card-title">Szent András Fekete</h5>
+                            <p class="card-text">
+                                0.5L 7%
+                            </p>
+                            <h5>
+                                <span class="price">840 Ft</span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3 px-1 my-md-0">
+                    <div class="card shadow card-bg">
+                        <div>
+                            <img src="image/wine/chandon.png" class="img-fluid card-img-top imgs">
+                        </div>
+                        <div class="card-body\">
+                            <h5 class="card-title">Chandon Garden Spritz</h5>
+                            <p class="card-text">
+                                0.75L 11.5%
+                            </p>
+                            <h5>
+                                <span class="price">7890 Ft</span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3 px-1 my-md-0">
+                    <div class="card shadow card-bg">
+                        <div>
+                            <img src="image/vodka/ciroc.png" class="img-fluid card-img-top imgs">
+                        </div>
+                        <div class="card-body\">
+                            <h5 class="card-title">Ciroc Vodka</h5>
+                            <p class="card-text">
+                                0.7L 40%
+                            </p>
+                            <h5>
+                                <span class="price">11000 Ft</span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3 px-1 my-md-0">
+                    <div class="card shadow card-bg">
+                        <div>
+                            <img src="image/whisky/jackdaniels.png" class="img-fluid card-img-top imgs">
+                        </div>
+                        <div class="card-body\">
+                            <h5 class="card-title">Jack Daniel's Tennessee</h5>
+                            <p class="card-text">
+                                0.7L 40%
+                            </p>
+                            <h5>
+                                <span class="price">7800 Ft</span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3 px-1 my-md-0">
+                    <div class="card shadow card-bg">
+                        <div>
+                            <img src="image/wine/oliverF.png" class="img-fluid card-img-top imgs">
+                        </div>
+                        <div class="card-body\">
+                            <h5 class="card-title">Frittmann Irsai Olivér</h5>
+                            <p class="card-text">
+                                0.75L 2022
+                            </p>
+                            <h5>
+                                <span class="price">1290 Ft</span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3 px-1 my-md-0">
+                    <div class="card shadow card-bg">
+                        <div>
+                            <img src="image/whisky/jimbeam.png" class="img-fluid card-img-top imgs">
+                        </div>
+                        <div class="card-body\">
+                            <h5 class="card-title">Jim Beam Bourbon</h5>
+                            <p class="card-text">
+                                0.75L 45%
+                            </p>
+                            <h5>
+                                <span class="price">6500 Ft</span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid cont3-bg">
+        <h1 class="mb-5">&nbsp;</h1>
+        <div class="d-flex justify-content-center pt-2" id="harmas">
+            <div class="cuccok" id="kep1">
+                <a href="wine.php" class="vis">
+                    <div class="prem-hover">
+                        <div class="szoveg">Bor<br></div>
+                    </div>
+                </a>
+            </div>
+            <div class="cuccok" id="kep2">
+                <a href="whisky.php" class="vis">
+                    <div class="prem-hover">
+                        <div class="szoveg">Whisky</div>
+                    </div>
+                </a>
+            </div>
+            <div class="cuccok" id="kep3">
+                <a href="wine.php" class="vis">
+                    <div class="prem-hover">
+                        <div class="szoveg">Pezsgő</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid lablec">
+        <div class="lablecBrand d-flex pt-4">
+            <div class="mx-5 t-50">
+                <img src="image/logo.jpg" title="logo" width="40%">
+            </div>
+            <div class="mx-5 align-self-center">
+                <i class="fas fa-map-marked-alt" style="color: rgb(165, 165, 165);"></i> 3530, Miskolc, Soltész Nagy Kálmán u. 10
+            </div>
+            <div class="mx-5 align-self-center" style="text-align: left;">
+                <i class="fas fa-mobile-alt px-1" style="color: rgb(165, 165, 165);"></i> +36 20 794 515
+                <br>
+                <i class="far fa-envelope" style="color: rgb(165, 165, 165);"></i> berenyikft@gmail.com
+            </div>
+        </div>
+        <hr class="lab">
+        <div class="lablecText pb-3">
+            © Berényi kft. 2022
+        </div>
+    </div>
+</body>
+</html>
